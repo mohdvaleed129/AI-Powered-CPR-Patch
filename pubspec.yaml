@@ -1,0 +1,46 @@
+name: ai_cpr_patch_monitor
+description: AI-powered CPR Patch Monitor app for cardiac monitoring via BLE.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # BLE communication
+  flutter_blue_plus: ^1.32.12
+  # Charts for real-time and dataset graphs
+  fl_chart: ^0.69.0
+  # State management
+  provider: ^6.1.2
+  # CSV file loading
+  csv: ^6.0.0
+  # File picker for CSV
+  file_picker: ^8.1.2
+  # Permissions handler
+  permission_handler: ^11.3.1
+  # Animated widgets
+  animate_do: ^3.3.4
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sample_data.csv
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#060A14"
+  adaptive_icon_foreground: "assets/app_icon.png"
